@@ -4,7 +4,7 @@ local Proxy = module("vrp", "lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP","vrp_for_medic")
 
-local function ch_soundbong(player,choice)
+local function ch_soundbong(player,choice) --Build audio source from use vrp function
 	local name = "bong="
 	local url = "https://cdn.discordapp.com/attachments/632769262913585153/681966043836842038/Sound_05868.mp3"
 	local x,y,z = vRPclient.getPosition(player)
