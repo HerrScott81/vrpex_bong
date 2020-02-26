@@ -9,6 +9,12 @@ local function ch_soundbong(player,choice) --Build audio source from use vrp fun
 	local url = "https://cdn.discordapp.com/attachments/632769262913585153/681966043836842038/Sound_05868.mp3"
 	local x,y,z = vRPclient.getPosition(player)
 	Wait(2500)
+-- set named audio source (looping)
+--- name: source name
+--- url: valid audio HTML url (ex: .ogg/.wav/direct ogg-stream url)
+--- volume: 0-1
+--- x,y,z: position (omit for unspatialized)
+--- max_dist  (omit for unspatialized)
   vRPclient.setAudioSource(-1,name, url, 0.3, x, y, z, 5)
 	Wait(6500)
 	vRPclient.removeAudioSource(-1,name)
