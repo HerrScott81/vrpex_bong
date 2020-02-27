@@ -16,7 +16,7 @@ local function ch_soundbong(player,choice) --Build audio source from use vrp fun
 --- x,y,z: position (omit for unspatialized)
 --- max_dist  (omit for unspatialized)
   vRPclient.setAudioSource(-1,name, url, 0.3, x, y, z, 5)
-	Wait(6500)
+	Wait(5500)
 	vRPclient.removeAudioSource(-1,name)
 end
 
